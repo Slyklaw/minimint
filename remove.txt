@@ -1,0 +1,7 @@
+sudo swapoff /swapfile
+sudo nano /etc/fstab #remove swapfile
+reboot
+rm /swapfile
+sudo apt remove thunderbird* libreoffice* blue* printer*
+
+sudo apt clean
