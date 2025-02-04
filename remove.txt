@@ -2,6 +2,21 @@ sudo swapoff /swapfile
 sudo nano /etc/fstab #remove swapfile
 reboot
 rm /swapfile
-sudo apt remove thunderbird* libreoffice* blue* printer*
+
+sudo apt remove thunderbird* libreoffice* blue* printer* simple-scan drawing pix xviewer sticky bulky xreader warpinator mintchat transmission-gtk webapp-manager gnome-calendar gnome-calculator celluloid hypnotix rhythmbox gucharmap onboard timeshift mintstick mintwelcome gufw papirus-icon-theme dmz-cursor-theme
+
+sudo rm -rf /usr/share/icons/Papirus
+sudo rm -rf /usr/share/icons/Mint-L
+sudo rm -rf /usr/share/icons/Mint-X
+sudo rm -rf /usr/share/icons/Yaru
+
+# Update accordingly if >2 kernels
+sudo apt-get purge linux-image-6.8.0-51-generic
+sudo apt-get purge linux-headers-6.8.0-51-generic
 
 sudo apt clean
+
+
+# TODO
+* remove windows managers, etc. SDDM, Mate?
+
